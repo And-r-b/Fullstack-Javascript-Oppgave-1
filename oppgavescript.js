@@ -35,9 +35,31 @@ const når du definerer variablene.
     console.log("Dette er ein tekst i ein string");
 
 /* Number, Det kan være hva slags tall så lenge det det ikke er desimal tall, da må man bruke float. 
-    For å gi et eksempel med tallene, så skal jeg gjøre et enkelt mattestykke */
+    For å gi et eksempel med tallene, så skal jeg gjøre et  par enkele mattestykker */
 
-    console.log(4 + 4);
+    console.log(4 + 4)
+    console.log(10 / 2)
+    console.log(20 - 15)
+    console.log(5 * 3)
+
+/* Boolean er brukt for sann eller usann. Det vil si for eksempel hvis du skal in til en pub og du er i en alder under 18
+    Så vil det stå usann og at du ikke kommer inn. Hvis du er over 18 så kommer inn. */
+
+    const myName = "Andreas";
+    const myAge = 25; // Skriver du 17 eller 18 så vil det si at du ikke kommer inn.
+
+    if (myAge > 18) {
+        console.log("You may enter")
+    } else {
+        console.log("You may not enter (underage)")
+    }
+
+/* Array er ein liste over ting som kan bli systematisk satt i rekkefølge.
+    Du kan også velge spesifikt ting inni et array for å bare vise det istedet for alt.
+    For eksempel i denne så skal vi ta forskjellige byer i et array */
+
+    const norwegianCities = ["Skien", "Porsgrunn", "Bamle", "Drangedal", "Bergen", "Stavanger", "Trøndelag"];
+    console.log(norwegianCities)
 
 /******************************************************************************
 OPPGAVE 3
