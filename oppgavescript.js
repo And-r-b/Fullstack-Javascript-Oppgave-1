@@ -58,7 +58,7 @@ const når du definerer variablene.
     Du kan også velge spesifikt ting inni et array for å bare vise det istedet for alt.
     For eksempel i denne så skal vi ta forskjellige byer i et array */
 
-    const norwegianCities = ["Skien", "Porsgrunn", "Bamle", "Drangedal", "Bergen", "Stavanger", "Trøndelag"];
+    const norwegianCities = ["Skien", "Porsgrunn", "Bamle", "Drangedal", "Bergen", "Stavanger", "Kristiansand"];
     console.log(norwegianCities)
 
 /******************************************************************************
@@ -72,6 +72,37 @@ Skriv noen eksempler der du tester disse operatorene.
 ******************************************************************************/
 
 // Skriv koden for oppgave 3 her
+
+// Matematiske operatorer
+const math1 = 2 + 6;
+console.log(math1)
+
+const math2 = 8 - 3;
+console.log(math2)
+
+const math3 = 20 / 5;
+console.log(math3)
+
+const math4 = 50 * 50;
+console.log(math4)
+
+// Forkortede operatorer
+let math5 = 5;
+console.log(math5 += 5)
+
+let math6 = 40;
+console.log(math6 -= 20)
+
+let math7 = 80;
+console.log(math7 /= 5)
+
+let math8 = 5;
+math8++;
+console.log(math8)
+
+let math9 = 10;
+math9--;
+console.log(math9)
 
 /******************************************************************************
 OPPGAVE 4
@@ -94,13 +125,20 @@ Prøv å endre verdiene på variablene for å sikre at IF/ELSE-setningen din
 håndterer alle tilfeller korrekt.
 ******************************************************************************/
 
-let userName = "";
-let userAge = 18;
-let userIsLoggedIn = false;
+let userName = "Andreas";
+let userAge = 25;
+let userIsLoggedIn = true;
 let userIsBlocked = false;
-let goToPage = "";
+let goToPage = "/home";
 
 // Skriv koden for oppgave 4 her
+if (userName > "" && userAge > 18) {
+    console.log(`Welcome ${userName}! You are of legal age, log in here ${goToPage}`)
+} else if (userIsBlocked) {
+    console.log(`User is locked to go to ${goToPage}!`)
+} else {
+    console.log("Invalid Name or Age, Please enter a valid name and legal Age")
+}
 
 /******************************************************************************
 OPPGAVE 5
@@ -117,6 +155,9 @@ Prøv å endre userMale til både true og false og bruk console.log for å sjekk
 at betingelsen din fungerer som den skal.
 ******************************************************************************/
 
-const userMale = false;
+const userMale = false; 
 
 // Skriv koden for oppgave 5 her
+
+const userTitle = userMale ? "Mr." : "Mrs.";
+console.log(userTitle)
